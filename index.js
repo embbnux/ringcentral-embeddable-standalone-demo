@@ -3,8 +3,9 @@ function openRingCentralWidget() {
   var opened = localStorage.getItem('standalone-widget-opened');
   var windowFeatures = 'menubar=no,location=no, scrollbars=yes, width=' + 300 + ', height=' + 520;
   if (opened) {
-    setTimeout(window.blur, 0);
-    localStorage.setItem('standalone-widget-focus', Date.now());
+    window.open('./standalone-widget.html#focus', 'embeddable-standalone-widget', windowFeatures)
+    // setTimeout(window.blur, 0);
+    // localStorage.setItem('standalone-widget-focus', Date.now());
     return;
   }
   window.open('./standalone-widget.html', 'embeddable-standalone-widget', windowFeatures)
