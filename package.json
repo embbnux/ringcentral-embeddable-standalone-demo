@@ -1,0 +1,13 @@
+{
+  "name": "embeddable-standalone-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "embbnux <embbnux@embbnux.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "http-server -p 3000 ./"
+  }
+}
