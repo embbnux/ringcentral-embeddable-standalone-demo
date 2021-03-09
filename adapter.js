@@ -46,7 +46,7 @@ window.addEventListener('message', (e) => {
       text: 'New Call from ' + (data.call.fromUserName || data.call.from),
       onClick: function() {
         window.focus();
-      };
+      },
     })
   }
 });
